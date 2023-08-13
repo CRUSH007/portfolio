@@ -1,0 +1,105 @@
+@mixin desktop {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: 1024px) and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin headingH1 {
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: 98%;
+    font-weight: 600;
+
+    @include tablet {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    @include mobile {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
+
+@mixin headingH2 {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 98%;
+    font-weight: 600;
+
+    @include tablet {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    @include mobile {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+@mixin headingH3 {
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 98%;
+
+    @include tablet {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    @include mobile {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+@mixin subtitle {
+    font-size: 20px;
+    line-height: 28px;
+
+    @include tablet {
+        font-size: 18px;
+    }
+
+    @include mobile {
+        font-size: 18px;
+    }
+}
+
+@mixin body1 {
+    font-size: 18px;
+    line-height: 28px;
+
+    @include tablet {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    @include mobile {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@mixin body2 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@mixin body3 {
+    font-size: 14px;
+    line-height: 20px;
+}
