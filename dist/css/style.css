@@ -381,6 +381,7 @@ pre {
  */
 a {
   background-color: transparent;
+  color: inherit;
 }
 
 /**
@@ -568,6 +569,38 @@ template {
   font-weight: 400;
   font-style: normal;
 }
+.header-top__row {
+  padding: 16px 0;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-img {
+  max-width: 32px;
+}
+
+.menu-top {
+  display: flex;
+  gap: 24px;
+}
+
+.menu-item {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.menu-item:hover {
+  font-weight: 500;
+  color: #111827;
+}
+
+.burger {
+  display: none;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

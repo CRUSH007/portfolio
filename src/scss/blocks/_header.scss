@@ -1,0 +1,38 @@
+.header {}
+
+.header-top__row {
+    padding: 16px 0;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    max-width: 32px;
+}
+
+.header-top__menu {}
+
+.navigation {}
+
+.menu-top {
+    display: flex;
+    gap: 24px;
+}
+
+.menu-item {
+    text-transform: uppercase;
+    font-weight: 500;
+
+    &:hover {
+        font-weight: 500;
+        color: $gray900;
+    }
+}
+
+.burger {
+    display: none;
+}
